@@ -27,7 +27,7 @@ const writeFile = require('write-file')
 
 * `<fp>` **{String|Buffer|Number}**: filepath to the new file    
 * `data` **{String|Buffer|Object}**: if object, JSON.stringify and writes it    
-* `[options]` **{Object|String}**: if string, treats it as `opts.encoding`, passed to [mkdirp][] too    
+* `[options]` **{Object|String}**: passed to [mkdirp][] too; if string, treats it as `opts.encoding`    
 * `callback` **{Function}**: done callback    
 
 **Example**

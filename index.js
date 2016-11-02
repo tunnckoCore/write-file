@@ -34,7 +34,7 @@ var isBuffer = require('is-buffer')
  *
  * @param  {String|Buffer|Number} `<fp>` filepath to the new file
  * @param  {String|Buffer|Object} `data` if object, JSON.stringify and writes it
- * @param  {Object|String} `[options]` if string, treats it as `opts.encoding`, passed to [mkdirp][] too
+ * @param  {Object|String} `[options]` passed to [mkdirp][] too; if string, treats it as `opts.encoding`
  * @param  {Function} `callback` done callback
  * @api public
  */
