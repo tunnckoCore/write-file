@@ -1,0 +1,71 @@
+{
+  "name": "write-file",
+  "version": "0.1.0",
+  "description": "Writing a file to disk, creates intermediate directories in the destination path if they dont already exist.",
+  "repository": "tunnckoCore/write-file",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "precommit.silent": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard --verbose",
+    "pretest": "npm run lint",
+    "test": "npm run coverage",
+    "posttest": "npm run lint:coverage",
+    "coverage": "nyc node test.js",
+    "lint:coverage": "nyc check-coverage --lines 0 --branches 0 --statements 0 --functions 0",
+    "report-coverage": "nyc report --reporter=text-lcov | coveralls",
+    "prerelease": "npm test",
+    "release": "standard-version --sign --no-verify",
+    "precommit": "git add --all",
+    "commit": "git-cz"
+  },
+  "dependencies": {
+    "is-buffer": "^1.1.4",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "commitizen": "^2.8.6",
+    "coveralls": "^2.11.14",
+    "cz-conventional-changelog": "^1.2.0",
+    "fs-exists-sync": "^0.1.0",
+    "mukla": "^0.4.4",
+    "nyc": "^8.3.2",
+    "pre-commit": "^1.1.3",
+    "rimraf": "^2.5.4",
+    "standard": "^8.5.0",
+    "standard-version": "^3.0.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "create",
+    "dir",
+    "disk",
+    "file",
+    "hard",
+    "harddisk",
+    "make",
+    "mkdir",
+    "mkdirp",
+    "save",
+    "write"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "verb": {
+    "run": true,
+    "toc": true,
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
+}
