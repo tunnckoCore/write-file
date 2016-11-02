@@ -66,14 +66,12 @@
     ],
     "related": {
       "list": [
-        "then-write-file",
         "write",
+        "dest",
         "write-json",
-        "then-parse-json",
-        "then-stringify-json",
+        "then-write-json",
         "try-read-json",
-        "then-read-json",
-        "then-write-json"
+        "then-read-json"
       ]
     },
     "lint": {
