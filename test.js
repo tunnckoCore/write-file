@@ -25,12 +25,14 @@ test('should throw TypeError if `fp` not a string or buffer', function (done) {
 })
 
 test('should write file to disk', function (done) {
+  var filepath = 'foo/bar/baz/qux.txt'
   rimraf.sync('foo')
-  writeFile('foo/bar/baz/qux.txt', '...contents', {
+  writeFile(filepath, '...contents', {
     encoding: 'utf8'
   }, function (err) {
     test.strictEqual(err, null)
-    test.strictEqual(exists('foo/bar/baz/qux.txt'), true)
+    test.strictEqual(exists(filepath), true)
+    test.ok(fs.readFileSync(filepath, 'utf8') === '...contents')
     rimraf.sync('foo')
     done()
   })
