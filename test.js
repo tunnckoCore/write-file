@@ -59,11 +59,12 @@ test('should write file if `fp` is number (fs.writeFile compat)', function (done
 })
 
 test('should write file if `fp` is buffer (fs.writeFile compat)', function (done) {
-  rimraf.sync('bar.txt')
-  writeFile(new Buffer('bar.txt'), 'abc', 'utf8', function (err) {
-    test.strictEqual(err, null)
-    test.strictEqual(exists('bar.txt'), true)
-    rimraf.sync('bar.txt')
+  var name = 'bar.txt'
+  rimraf.sync(name)
+  writeFile(new Buffer(name), 'abc', 'utf8', function (err) {
+    test.ifError(err)
+    test.ok(exists(name))
+    rimraf.sync(name)
     done()
   })
 })
