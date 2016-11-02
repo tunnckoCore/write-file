@@ -64,6 +64,18 @@
     "tasks": [
       "readme"
     ],
+    "related": {
+      "list": [
+        "then-write-file",
+        "write",
+        "write-json",
+        "then-parse-json",
+        "then-stringify-json",
+        "try-read-json",
+        "then-read-json",
+        "then-write-json"
+      ]
+    },
     "lint": {
       "reflinks": true
     }

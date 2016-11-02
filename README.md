@@ -46,6 +46,16 @@ writeFile('foo/qux/bar.json', { foo: 'bar' }, function (err) {
 })
 ```
 
+## Related
+- [then-parse-json](https://www.npmjs.com/package/then-parse-json): Gracefully parse JSON using promises - promisified JSON.parse | [homepage](https://github.com/tunnckocore/then-parse-json#readme "Gracefully parse JSON using promises - promisified JSON.parse")
+- [then-read-json](https://www.npmjs.com/package/then-read-json): Read JSON file using promises | [homepage](https://github.com/tunnckocore/then-read-json#readme "Read JSON file using promises")
+- [then-stringify-json](https://www.npmjs.com/package/then-stringify-json): Gracefully stringify JSON using promises - promisified JSON.stringify | [homepage](https://github.com/tunnckocore/then-stringify-json#readme "Gracefully stringify JSON using promises - promisified JSON.stringify")
+- [then-write-file](https://www.npmjs.com/package/then-write-file): Write file to disk, using promises and creating recursively intermediate directories if… [more](https://github.com/tunnckocore/then-write-file#readme) | [homepage](https://github.com/tunnckocore/then-write-file#readme "Write file to disk, using promises and creating recursively intermediate directories if they don't exist.")
+- [then-write-json](https://www.npmjs.com/package/then-write-json): Write contents to JSON file using JSON.stringify and promises. Creating intermediate directories… [more](https://github.com/tunnckocore/then-write-json#readme) | [homepage](https://github.com/tunnckocore/then-write-json#readme "Write contents to JSON file using JSON.stringify and promises. Creating intermediate directories if they don't exist.")
+- [try-read-json](https://www.npmjs.com/package/try-read-json): Fast, meaningful and correct try/catch flow for reading JSON with JSON.parse… [more](https://github.com/tunnckocore/try-read-json#readme) | [homepage](https://github.com/tunnckocore/try-read-json#readme "Fast, meaningful and correct try/catch flow for reading JSON with JSON.parse - support optional callback")
+- [write-json](https://www.npmjs.com/package/write-json): Write a JSON file to disk, also creates intermediate directories in the… [more](https://github.com/jonschlinkert/write-json) | [homepage](https://github.com/jonschlinkert/write-json "Write a JSON file to disk, also creates intermediate directories in the destination path if they don't already exist.")
+- [write](https://www.npmjs.com/package/write): Write files to disk, creating intermediate directories if they don't exist. | [homepage](https://github.com/jonschlinkert/write "Write files to disk, creating intermediate directories if they don't exist.")
+
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/write-file/issues/new).  
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
