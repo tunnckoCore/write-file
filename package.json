@@ -1,6 +1,6 @@
 {
   "name": "write-file",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Writing a file to disk, creates intermediate directories in the destination path if they dont already exist.",
   "repository": "tunnckoCore/write-file",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
