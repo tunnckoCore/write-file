@@ -12,6 +12,33 @@ var path = require('path')
 var mkdirp = require('mkdirp')
 var isBuffer = require('is-buffer')
 
+/**
+ * > Writes a file to disk with support for
+ * creating intermediate directories and JSON files.
+ *
+ * **Example**
+ *
+ * ```js
+ * var writeFile = require('write-file')
+ *
+ * writeFile('foo/bar/baz/qux.txt', 'some contents', function (err) {
+ *   if (err) return console.log(err)
+ *   console.log('file is written')
+ * })
+ *
+ * // automatically writes a json files
+ * writeFile('foo/qux/bar.json', { foo: 'bar' }, function (err) {
+ *   // if not `err`, file is written
+ * })
+ * ```
+ *
+ * @param  {String|Buffer|Number} `<fp>` filepath to the new file
+ * @param  {String|Buffer|Object} `data` if object, JSON.stringify and writes it
+ * @param  {Object|String} `[options]` if string, treats it as `opts.encoding`, passed to [mkdirp][] too
+ * @param  {Function} `callback` done callback
+ * @api public
+ */
+
 module.exports = function writeFile (fp, data, options, callback) {
   var isBuff = isBuffer(fp)
   fp = typeof fp === 'number' ? fp.toString() : fp
